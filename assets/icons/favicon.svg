@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bk-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="bk-bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b1022"/>
+      <stop offset="100%" stop-color="#050711"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bk-bg)" stroke="url(#bk-grad)" stroke-width="2.5"/>
+  <path d="M19 19H31.5C36.194 19 39.5 21.6 39.5 25.6C39.5 28.4 37.8 30.6 35.1 31.5C38.4 32.3 40.5 34.9 40.5 38.4C40.5 42.9 36.8 45.5 31.6 45.5H19V19ZM24.5 29.6H30.8C33.1 29.6 34.4 28.4 34.4 26.5C34.4 24.6 33.1 23.5 30.8 23.5H24.5V29.6ZM24.5 41H31.3C33.8 41 35.2 39.7 35.2 37.6C35.2 35.5 33.8 34.1 31.3 34.1H24.5V41Z" fill="url(#bk-grad)"/>
+  <path d="M44.5 19L49 23.5L44.5 28" stroke="#06b6d4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43 45L48 39" stroke="#8b5cf6" stroke-width="2.6" stroke-linecap="round"/>
+</svg>
+

@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bipul Kumar — Full Stack Developer | Web Developer</title>
+  <meta name="description" content="Portfolio of Bipul Kumar (@vipuldhurvey) — Full Stack Developer and Web Developer with Coding Ninjas training, electrical engineering background, and six years of industrial experience.">
+  <meta name="keywords" content="Bipul Kumar, vipuldhurvey, Full Stack Developer, Web Developer, Frontend Developer, HTML5, CSS3, JavaScript, Java, WordPress, Shopify, Portfolio">
+  <meta name="author" content="Bipul Kumar">
+  <meta name="theme-color" content="#060812">
+  <link rel="canonical" href="https://vipuldhurvey.github.io/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bipul Kumar Portfolio">
+  <meta property="og:title" content="Bipul Kumar — Full Stack Developer | Web Developer">
+  <meta property="og:description" content="Building modern, responsive, user-friendly web applications. Explore live GitHub projects, technical skills, and engineering background.">
+  <meta property="og:url" content="https://vipuldhurvey.github.io/">
+  <meta property="og:image" content="https://vipuldhurvey.github.io/assets/images/hero-developer.jpg">
+  <meta property="og:image:alt" content="Futuristic developer workspace showcase for Bipul Kumar">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bipul Kumar — Full Stack Developer | Web Developer">
+  <meta name="twitter:description" content="Building modern, responsive, user-friendly web applications. Explore live GitHub repositories and technical skills.">
+  <meta name="twitter:image" content="https://vipuldhurvey.github.io/assets/images/hero-developer.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/profile-placeholder.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Pre-paint theme initialization -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('bk-portfolio-theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bipul Kumar",
+      "alternateName": "vipuldhurvey",
+      "jobTitle": "Full Stack Developer | Web Developer",
+      "url": "https://vipuldhurvey.github.io/",
+      "sameAs": [
+        "https://github.com/Vipuldhurvey"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Coding Ninjas"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Board of Technical Education, Lucknow"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Development Technical Institute, Mathura"
+        }
+      ],
+      "knowsAbout": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Java",
+        "WordPress",
+        "Shopify",
+        "Responsive Web Design",
+        "Frontend Development",
+        "Database Fundamentals"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Preloader -->
+  <div id="page-preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-mark">BK</div>
+      <div class="preloader-bar"><span></span></div>
+      <span class="preloader-text mono">INITIALIZING INTERFACE</span>
+    </div>
+  </div>
+
+  <!-- Custom Desktop Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Futuristic Backdrop -->
+  <div class="ambient-backdrop" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="#home" class="brand" aria-label="Bipul Kumar — Home">
+        <span class="brand-mark">BK</span>
+        <span class="brand-text">
+          <strong>Bipul Kumar</strong>
+          <small class="mono">@vipuldhurvey</small>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-indicator" id="nav-indicator" aria-hidden="true"></li>
+          <li><a href="#home" class="nav-link is-active" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+          <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#github" class="nav-link" data-section="github">GitHub</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark or light theme" title="Switch Theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="btn btn-nav-gh" aria-label="GitHub profile vipuldhurvey">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#github" class="mobile-nav-link">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+      <canvas id="hero-particles" class="hero-particles" aria-hidden="true"></canvas>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge reveal-item">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Full Stack Developer | Web Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-greeting reveal-text" style="--delay: 0.08s">
+              Hi, I'm <span class="name-highlight">Bipul Kumar</span>
+            </span>
+            <span class="hero-headline gradient-text reveal-text" style="--delay: 0.18s">
+              Building Modern Digital Experiences
+            </span>
+          </h1>
+
+          <p class="hero-intro reveal-item" style="--delay: 0.28s">
+            A technology enthusiast with training in full-stack web development, a background in electrical engineering, and six years of industrial experience. Interested in building modern, responsive, user-friendly web applications.
+          </p>
+
+          <div class="hero-cta-group reveal-item" style="--delay: 0.36s">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <span>Explore My Projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <span>View GitHub Profile</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics reveal-item" style="--delay: 0.44s">
+            <div class="metric-pill glass-pill">
+              <strong id="hero-repo-count" class="metric-value mono">--</strong>
+              <span>Live Public Repos</span>
+            </div>
+            <div class="metric-pill glass-pill">
+              <strong class="metric-value mono"><span data-count-to="6">6</span> Yrs</strong>
+              <span>Industrial Discipline</span>
+            </div>
+            <div class="metric-pill glass-pill">
+              <strong class="metric-value mono">Full Stack</strong>
+              <span>Coding Ninjas Trained</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-item" style="--delay: 0.22s">
+          <div class="hero-stage" data-tilt data-tilt-max="8">
+            <div class="hero-glow-ring" aria-hidden="true"></div>
+
+            <!-- Floating Technology Icons -->
+            <div class="floating-tech float-1" title="HTML5" aria-hidden="true">
+              <img src="assets/icons/html5.svg" alt="" width="28" height="28">
+            </div>
+            <div class="floating-tech float-2" title="CSS3" aria-hidden="true">
+              <img src="assets/icons/css3.svg" alt="" width="28" height="28">
+            </div>
+            <div class="floating-tech float-3" title="JavaScript" aria-hidden="true">
+              <img src="assets/icons/javascript.svg" alt="" width="28" height="28">
+            </div>
+            <div class="floating-tech float-4" title="Java" aria-hidden="true">
+              <img src="assets/icons/java.svg" alt="" width="28" height="28">
+            </div>
+            <div class="floating-tech float-5" title="WordPress" aria-hidden="true">
+              <img src="assets/icons/wordpress.svg" alt="" width="28" height="28">
+            </div>
+            <div class="floating-tech float-6" title="Shopify" aria-hidden="true">
+              <img src="assets/icons/shopify.svg" alt="" width="28" height="28">
+            </div>
+
+            <div class="hero-artwork glass-card">
+              <img src="assets/images/hero-developer.jpg" alt="Futuristic developer workspace illustration representing modern full-stack web engineering" class="hero-img" width="1280" height="720">
+              <div class="hero-hud glass-pill">
+                <span class="hud-dot" aria-hidden="true"></span>
+                <span class="mono">github.com/Vipuldhurvey</span>
+              </div>
+              <div class="hero-caption mono">Representative Workspace Illustration</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span class="scroll-mouse" aria-hidden="true"><span></span></span>
+        <span class="scroll-label mono">Scroll to Explore</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">01 // CAREER STORY &amp; MINDSET</span>
+          <h2 class="section-title">From Precision Operations to <span class="gradient-text">Full-Stack Engineering</span></h2>
+          <p class="section-subtitle">
+            Combining systems discipline from electrical engineering, six years of production reliability, human insight from psychology, and structured full-stack development training.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <aside class="about-profile glass-card reveal-item" data-tilt data-tilt-max="5">
+            <div class="profile-avatar-wrap">
+              <img src="assets/images/profile-placeholder.png" alt="Stylized futuristic developer emblem representing Bipul Kumar" class="profile-avatar" width="440" height="440" loading="lazy">
+              <span class="profile-badge mono">Representative Avatar</span>
+            </div>
+            <div class="profile-meta">
+              <h3>Bipul Kumar</h3>
+              <p class="profile-role">Full Stack Developer | Web Developer</p>
+              <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="profile-gh-link mono">
+                github.com/Vipuldhurvey
+              </a>
+            </div>
+            <ul class="profile-facts">
+              <li>
+                <span class="fact-label">Training</span>
+                <strong>Full Stack Web Development — Coding Ninjas</strong>
+              </li>
+              <li>
+                <span class="fact-label">Engineering</span>
+                <strong>Diploma in Electrical Engineering (2016)</strong>
+              </li>
+              <li>
+                <span class="fact-label">Degree</span>
+                <strong>B.A. in Psychology (2021)</strong>
+              </li>
+              <li>
+                <span class="fact-label">Industry</span>
+                <strong>6 Years — Kewal Kiran Clothing Ltd.</strong>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="about-narrative glass-card reveal-item">
+            <div class="narrative-copy">
+              <h3>Turning Real-World Discipline Into Clean, Responsive Code</h3>
+              <p>
+                My path into software development started with curiosity about how complex systems work and grew through deliberate, hands-on effort. With a <strong>Diploma in Electrical Engineering (2016)</strong> and <strong>six years of industrial experience</strong> as a Machine Operator at <strong>Kewal Kiran Clothing Ltd.</strong>, I learned firsthand what it means to operate precision machinery, follow structured workflows, stay calm under production pressure, and diagnose equipment issues before they escalate.
+              </p>
+              <p>
+                Alongside my industrial work, I completed my <strong>Bachelor of Arts in Psychology (2021)</strong> — strengthening how I think about user behavior, clarity, and intuitive interaction — and pursued structured <strong>Full Stack Web Development training at Coding Ninjas</strong>.
+              </p>
+              <p>
+                Today, I channel that steady work ethic into building responsive interfaces, interactive JavaScript tools, full-stack coursework applications, and practical web customization across HTML5, CSS3, JavaScript, Java, WordPress, Shopify, and database fundamentals — backed by dozens of public repositories you can inspect directly on GitHub.
+              </p>
+            </div>
+
+            <div class="pillars-grid">
+              <article class="pillar-card">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                </div>
+                <h4>Systems Thinking</h4>
+                <p>Electrical fundamentals translate directly into structured logic flow and step-by-step debugging.</p>
+              </article>
+              <article class="pillar-card">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h4>Human-Centered UX</h4>
+                <p>Psychology training shapes clean visual hierarchy, accessible flows, and intuitive interfaces.</p>
+              </article>
+              <article class="pillar-card">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <h4>Consistent Execution</h4>
+                <p>Six years in industrial manufacturing taught punctuality, quality focus, and calm problem resolution.</p>
+              </article>
+              <article class="pillar-card">
+                <div class="pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h4>Practical Building</h4>
+                <p>Continuous hands-on learning across frontend interfaces, JavaScript apps, Java DSA, and backend APIs.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS ==================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">02 // TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title">Core Technologies &amp; <span class="gradient-text">Skill Stack</span></h2>
+          <p class="section-subtitle">
+            Technologies and practical disciplines developed through full-stack coursework, storefront customization, and continuous GitHub coding practice.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/html5.svg" alt="HTML5 logo" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">Markup</span>
+            </div>
+            <h3>HTML5</h3>
+            <p>Semantic document architecture, accessible landmarks, clean forms, and SEO-friendly page structure.</p>
+            <div class="skill-chips"><span>Semantic DOM</span><span>Accessibility</span><span>SEO Tags</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/css3.svg" alt="CSS3 logo" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">Styling</span>
+            </div>
+            <h3>CSS3</h3>
+            <p>Modern Grid and Flexbox layouts, custom properties, keyframe animations, and glassmorphic visual systems.</p>
+            <div class="skill-chips"><span>Grid &amp; Flex</span><span>Animations</span><span>Theming</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/javascript.svg" alt="JavaScript logo" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">Logic</span>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Interactive UI state, DOM manipulation, Fetch API integration, asynchronous flows, and client-side utilities.</p>
+            <div class="skill-chips"><span>ES6+</span><span>REST APIs</span><span>DOM Events</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/java.svg" alt="Java logo" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">OOP &amp; DSA</span>
+            </div>
+            <h3>Java</h3>
+            <p>Object-oriented programming fundamentals, algorithmic problem solving, and foundational data structures.</p>
+            <div class="skill-chips"><span>OOP</span><span>Algorithms</span><span>Problem Solving</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/wordpress.svg" alt="WordPress logo" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">CMS</span>
+            </div>
+            <h3>WordPress</h3>
+            <p>Theme setup, layout customization, page adjustments, plugin configuration, and routine content maintenance.</p>
+            <div class="skill-chips"><span>Theme Tweaks</span><span>Layouts</span><span>Site Support</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/shopify.svg" alt="Shopify logo" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">E-Commerce</span>
+            </div>
+            <h3>Shopify</h3>
+            <p>Storefront section customization, product presentation styling, responsive layout tuning, and UI polish.</p>
+            <div class="skill-chips"><span>Storefront UI</span><span>Sections</span><span>Styling</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/responsive.svg" alt="Responsive Web Design icon" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">Multi-Device</span>
+            </div>
+            <h3>Responsive Web Design</h3>
+            <p>Mobile-first fluid layouts engineered to look crisp across phones, tablets, laptops, and wide monitors.</p>
+            <div class="skill-chips"><span>Mobile-First</span><span>Fluid Grids</span><span>Touch UX</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/frontend.svg" alt="Frontend Development icon" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">UI Engineering</span>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Translating interface designs into fast, maintainable web experiences with clear navigation and micro-interactions.</p>
+            <div class="skill-chips"><span>Components</span><span>UI Polish</span><span>Performance</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/bugfix.svg" alt="Bug Fixing icon" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">Diagnostics</span>
+            </div>
+            <h3>Bug Fixing</h3>
+            <p>Methodical troubleshooting of CSS alignment issues, broken UI scripts, responsive overflows, and console errors.</p>
+            <div class="skill-chips"><span>Layout Fixes</span><span>DevTools</span><span>QA Checks</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal-item" data-tilt data-tilt-max="6">
+            <div class="skill-head">
+              <div class="skill-logo"><img src="assets/icons/database.svg" alt="Database Fundamentals icon" width="40" height="40" loading="lazy"></div>
+              <span class="skill-tag mono">Data Layer</span>
+            </div>
+            <h3>Database Fundamentals</h3>
+            <p>Relational concepts, structured queries, schema basics, and CRUD data modeling practiced in coursework projects.</p>
+            <div class="skill-chips"><span>DBMS Concepts</span><span>CRUD</span><span>Data Modeling</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">03 // HOW I CAN CONTRIBUTE</span>
+          <h2 class="section-title">Development &amp; Support <span class="gradient-text">Capabilities</span></h2>
+          <p class="section-subtitle">
+            Focused web development and storefront support services aligned directly with my hands-on technical toolkit.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card glass-card reveal-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline><line x1="14" y1="4" x2="10" y2="20"></line></svg>
+            </div>
+            <h3>Frontend Website Development</h3>
+            <p>Building clean, accessible static websites, landing pages, and interactive web interfaces with HTML5, CSS3, and Vanilla JavaScript.</p>
+          </article>
+
+          <article class="service-card glass-card reveal-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="14" height="12" rx="2"></rect><rect x="14" y="8" width="8" height="12" rx="2"></rect></svg>
+            </div>
+            <h3>Responsive Website Design</h3>
+            <p>Adapting layouts for seamless viewing and comfortable touch navigation across mobile phones, tablets, laptops, and desktops.</p>
+          </article>
+
+          <article class="service-card glass-card reveal-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            </div>
+            <h3>Website Customization</h3>
+            <p>Refining visual styling, updating section layouts, adding interactive behaviors, and tailoring existing templates to match brand goals.</p>
+          </article>
+
+          <article class="service-card glass-card reveal-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3>Bug Fixing</h3>
+            <p>Tracking down broken UI elements, overflow issues, styling regressions, and JavaScript behavior glitches with systematic testing.</p>
+          </article>
+
+          <article class="service-card glass-card reveal-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3>WordPress Support</h3>
+            <p>Assisting with page updates, visual layout adjustments, CSS customization, and keeping WordPress site sections clean and mobile-ready.</p>
+          </article>
+
+          <article class="service-card glass-card reveal-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <h3>Shopify Customization</h3>
+            <p>Updating storefront appearance, improving product layout readability, and polishing mobile shopping sections for cleaner UX.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORK EXPERIENCE ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">04 // INDUSTRIAL TRACK RECORD</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Work Experience</span></h2>
+          <p class="section-subtitle">
+            Six years of dependable operational experience in an industrial manufacturing environment — building discipline, consistency, and precision under real production schedules.
+          </p>
+        </div>
+
+        <article class="experience-showcase glass-card reveal-item">
+          <div class="exp-visual">
+            <img src="assets/images/experience/industrial-machinery.jpg" alt="Industrial manufacturing equipment representing precision machine operation experience" class="exp-img" width="1200" height="675" loading="lazy">
+            <div class="exp-visual-overlay">
+              <span class="exp-duration-badge">
+                <strong class="mono"><span data-count-to="6">6</span> Years</strong>
+                <span>Continuous Tenure</span>
+              </span>
+              <span class="visual-note mono">Representative Industrial Visual</span>
+            </div>
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-header">
+              <span class="exp-kicker mono">MANUFACTURING &amp; OPERATIONS</span>
+              <h3>Machine Operator</h3>
+              <p class="exp-company">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01"></path>
+                </svg>
+                <span>Kewal Kiran Clothing Ltd.</span>
+              </p>
+            </div>
+
+            <p class="exp-summary">
+              Operated and monitored industrial garment production equipment over a six-year period, maintaining steady throughput, safe equipment handling, and consistent operational standards on the production floor.
+            </p>
+
+            <div class="exp-block">
+              <h4 class="mono">CORE RESPONSIBILITIES</h4>
+              <div class="responsibility-grid">
+                <div class="resp-item">
+                  <span class="resp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  </span>
+                  <div>
+                    <strong>Machine Operation</strong>
+                    <span>Precision operation, calibration awareness, and steady daily execution.</span>
+                  </div>
+                </div>
+                <div class="resp-item">
+                  <span class="resp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                  </span>
+                  <div>
+                    <strong>Production Handling</strong>
+                    <span>Coordinating batch flow, maintaining output quality, and meeting workflow targets.</span>
+                  </div>
+                </div>
+                <div class="resp-item">
+                  <span class="resp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                  </span>
+                  <div>
+                    <strong>Equipment Handling</strong>
+                    <span>Safe machinery setup, routine inspections, and early fault observation.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-transfer">
+              <span class="transfer-pill">Process Reliability</span>
+              <span class="transfer-pill">Troubleshooting Patience</span>
+              <span class="transfer-pill">Quality Control Mindset</span>
+              <span class="transfer-pill">Team Accountability</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION TIMELINE ==================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">05 // ACADEMIC &amp; TECHNICAL TRAINING</span>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">
+            A multidisciplinary foundation spanning technical engineering, psychology, accounting software fundamentals, and full-stack web development.
+          </p>
+        </div>
+
+        <div class="timeline" id="education-timeline">
+          <div class="timeline-line" aria-hidden="true">
+            <div class="timeline-progress" id="timeline-progress"></div>
+          </div>
+
+          <article class="timeline-item reveal-item">
+            <div class="timeline-node" aria-hidden="true"><span></span></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-primary mono">Status: Completed</span>
+                <span class="timeline-type mono">Full-Stack Training</span>
+              </div>
+              <h3>Full Stack Web Development</h3>
+              <p class="timeline-inst">Institute: Coding Ninjas</p>
+              <p class="timeline-desc">
+                Comprehensive hands-on program covering HTML5, CSS3, JavaScript, backend APIs, database fundamentals, React coursework, and Java DSA problem solving.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal-item">
+            <div class="timeline-node" aria-hidden="true"><span></span></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge mono">Completed: 2021</span>
+                <span class="timeline-type mono">Bachelor's Degree</span>
+              </div>
+              <h3>Bachelor of Arts (B.A.) in Psychology</h3>
+              <p class="timeline-inst">Undergraduate Degree</p>
+              <p class="timeline-desc">
+                Built analytical understanding of human cognition, behavior, and communication — informing thoughtful, user-centric web design choices.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal-item">
+            <div class="timeline-node" aria-hidden="true"><span></span></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge mono">Year: 2016</span>
+                <span class="timeline-type mono">Engineering Diploma</span>
+              </div>
+              <h3>Diploma in Electrical Engineering</h3>
+              <p class="timeline-inst">Institution: Board of Technical Education, Lucknow</p>
+              <p class="timeline-desc">
+                Core technical education in electrical circuits, systems logic, technical troubleshooting, and structured engineering discipline.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal-item">
+            <div class="timeline-node" aria-hidden="true"><span></span></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-badge mono">Year: 2016</span>
+                <span class="timeline-type mono">Technical Certificate</span>
+              </div>
+              <h3>Tally ERP 9</h3>
+              <p class="timeline-inst">Institution: Development Technical Institute, Mathura</p>
+              <p class="timeline-desc">
+                Practical training in business record workflows, structured data entry, and ERP accounting system fundamentals.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS & GITHUB EXPLORER ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">06 // LIVE GITHUB REPOSITORY ENGINE</span>
+          <h2 class="section-title">Projects &amp; <span class="gradient-text">Code Archive</span></h2>
+          <p class="section-subtitle">
+            Dynamically fetched from the public GitHub REST API for <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="inline-link">@vipuldhurvey</a>. Featured web projects and practice/coursework repositories are categorized transparently.
+          </p>
+        </div>
+
+        <!-- API Status & Controls -->
+        <div class="projects-toolbar glass-card reveal-item">
+          <div class="toolbar-top">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <label for="project-search" class="sr-only">Search repositories</label>
+              <input id="project-search" type="search" placeholder="Search repositories by name, language, or keyword..." autocomplete="off">
+              <button id="clear-search" class="clear-search-btn" type="button" aria-label="Clear search" hidden>&times;</button>
+            </div>
+
+            <div class="toolbar-right">
+              <div class="sort-wrap">
+                <label for="project-sort" class="mono">Sort:</label>
+                <select id="project-sort" aria-label="Sort repositories">
+                  <option value="updated">Recently Updated</option>
+                  <option value="featured">Featured First</option>
+                  <option value="stars">Most Stars</option>
+                  <option value="name">Name (A–Z)</option>
+                </select>
+              </div>
+              <div id="github-sync-status" class="sync-status mono" aria-live="polite">
+                <span class="sync-dot"></span>
+                <span>Connecting to GitHub API...</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-filters" id="category-filters" role="tablist" aria-label="Repository categories">
+            <button type="button" class="filter-chip is-active" data-category="all" role="tab" aria-selected="true">All Repositories <span class="chip-count" data-count-cat="all">--</span></button>
+            <button type="button" class="filter-chip" data-category="Featured Projects" role="tab" aria-selected="false">Featured Projects <span class="chip-count" data-count-cat="Featured Projects">--</span></button>
+            <button type="button" class="filter-chip" data-category="Web Applications" role="tab" aria-selected="false">Web Applications <span class="chip-count" data-count-cat="Web Applications">--</span></button>
+            <button type="button" class="filter-chip" data-category="JavaScript Projects" role="tab" aria-selected="false">JavaScript Projects <span class="chip-count" data-count-cat="JavaScript Projects">--</span></button>
+            <button type="button" class="filter-chip" data-category="Java Projects" role="tab" aria-selected="false">Java Projects <span class="chip-count" data-count-cat="Java Projects">--</span></button>
+            <button type="button" class="filter-chip" data-category="Backend / API Projects" role="tab" aria-selected="false">Backend / API Projects <span class="chip-count" data-count-cat="Backend / API Projects">--</span></button>
+            <button type="button" class="filter-chip" data-category="DSA & Programming" role="tab" aria-selected="false">DSA &amp; Programming <span class="chip-count" data-count-cat="DSA & Programming">--</span></button>
+            <button type="button" class="filter-chip" data-category="Database Projects" role="tab" aria-selected="false">Database Projects <span class="chip-count" data-count-cat="Database Projects">--</span></button>
+            <button type="button" class="filter-chip" data-category="Learning & Experiments" role="tab" aria-selected="false">Learning &amp; Experiments <span class="chip-count" data-count-cat="Learning & Experiments">--</span></button>
+          </div>
+
+          <div class="toolbar-meta">
+            <p id="projects-summary" class="mono">Loading repositories...</p>
+            <p class="truth-legend mono">
+              <span class="legend-dot showcase"></span> Showcase / App
+              <span class="legend-dot practice"></span> Practice &amp; Coursework
+            </p>
+          </div>
+        </div>
+
+        <!-- Graceful API Error / Rate Limit Fallback Banner -->
+        <div id="projects-fallback" class="fallback-banner glass-card" hidden>
+          <div class="fallback-content">
+            <strong id="fallback-title">GitHub API Temporarily Unavailable</strong>
+            <p id="fallback-message">Showing cached or verified repository snapshot. You can always browse all live repositories directly on GitHub.</p>
+          </div>
+          <a href="https://github.com/Vipuldhurvey?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            Open GitHub Repositories
+          </a>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="projects-grid" aria-live="polite">
+          <!-- Loading Skeletons (Replaced by github.js) -->
+          <div class="project-skeleton glass-card" aria-hidden="true"></div>
+          <div class="project-skeleton glass-card" aria-hidden="true"></div>
+          <div class="project-skeleton glass-card" aria-hidden="true"></div>
+          <div class="project-skeleton glass-card" aria-hidden="true"></div>
+          <div class="project-skeleton glass-card" aria-hidden="true"></div>
+          <div class="project-skeleton glass-card" aria-hidden="true"></div>
+        </div>
+
+        <!-- Empty Search State -->
+        <div id="projects-empty" class="empty-state glass-card" hidden>
+          <h3>No Matching Repositories</h3>
+          <p>Try clearing your search term or switching back to All Repositories.</p>
+          <button id="reset-filters-btn" type="button" class="btn btn-secondary btn-sm">Reset Filters</button>
+        </div>
+
+        <!-- Load More Control -->
+        <div id="load-more-wrap" class="load-more-wrap" hidden>
+          <button id="load-more-btn" type="button" class="btn btn-primary btn-glow">
+            <span>Load More Repositories</span>
+            <span id="load-more-remaining" class="mono"></span>
+          </button>
+        </div>
+
+        <!-- Responsive Visual Gallery Subsection -->
+        <div class="visual-gallery-block reveal-item">
+          <div class="gallery-header">
+            <div>
+              <span class="section-kicker mono">VISUAL CONCEPT GALLERY</span>
+              <h3>Domain &amp; Architecture <span class="gradient-text">Visuals</span></h3>
+            </div>
+            <p class="gallery-note mono">Curated representative illustrations &amp; domain artwork (never mislabeled as app screenshots).</p>
+          </div>
+
+          <div class="gallery-grid" id="gallery-grid">
+            <button type="button" class="gallery-item glass-card" data-gallery-src="assets/images/projects/frontend-showcase.jpg" data-gallery-title="Frontend &amp; Web Interfaces" data-gallery-caption="Representative Illustration — Responsive dashboards, glassmorphic UI components, and interactive layouts.">
+              <img src="assets/images/projects/frontend-showcase.jpg" alt="Representative illustration of modern frontend web dashboard UI" loading="lazy" width="960" height="540">
+              <div class="gallery-overlay">
+                <span class="gallery-badge mono">Representative Illustration</span>
+                <strong>Frontend &amp; Web Interfaces</strong>
+              </div>
+            </button>
+
+            <button type="button" class="gallery-item glass-card" data-gallery-src="assets/images/projects/javascript-interactive.jpg" data-gallery-title="Interactive JavaScript Systems" data-gallery-caption="Representative Illustration — Audio/media controls, timer apps, API-driven searches, and dynamic DOM tools.">
+              <img src="assets/images/projects/javascript-interactive.jpg" alt="Representative illustration of interactive JavaScript UI controls and audio waves" loading="lazy" width="960" height="540">
+              <div class="gallery-overlay">
+                <span class="gallery-badge mono">Representative Illustration</span>
+                <strong>Interactive JavaScript Systems</strong>
+              </div>
+            </button>
+
+            <button type="button" class="gallery-item glass-card" data-gallery-src="assets/images/projects/backend-architecture.jpg" data-gallery-title="Backend APIs &amp; Data Flow" data-gallery-caption="Representative Illustration — Node.js routing, REST endpoints, MVC patterns, and DBMS data modeling.">
+              <img src="assets/images/projects/backend-architecture.jpg" alt="Representative illustration of backend server nodes and database pipelines" loading="lazy" width="960" height="540">
+              <div class="gallery-overlay">
+                <span class="gallery-badge mono">Representative Illustration</span>
+                <strong>Backend APIs &amp; Data Flow</strong>
+              </div>
+            </button>
+
+            <button type="button" class="gallery-item glass-card" data-gallery-src="assets/images/projects/java-dsa.jpg" data-gallery-title="Java &amp; Algorithmic Logic" data-gallery-caption="Representative Illustration — Data structures, object-oriented Java programs, and algorithmic practice.">
+              <img src="assets/images/projects/java-dsa.jpg" alt="Representative illustration of graph structures and algorithmic trees" loading="lazy" width="960" height="540">
+              <div class="gallery-overlay">
+                <span class="gallery-badge mono">Representative Illustration</span>
+                <strong>Java &amp; Algorithmic Logic</strong>
+              </div>
+            </button>
+
+            <button type="button" class="gallery-item glass-card" data-gallery-src="assets/images/projects/ecommerce-cms.jpg" data-gallery-title="Storefront &amp; CRM Layouts" data-gallery-caption="Representative Illustration — Configurators, storefront layouts, Shopify &amp; WordPress interface customization.">
+              <img src="assets/images/projects/ecommerce-cms.jpg" alt="Representative illustration of modular storefront and CRM UI components" loading="lazy" width="960" height="540">
+              <div class="gallery-overlay">
+                <span class="gallery-badge mono">Representative Illustration</span>
+                <strong>Storefront &amp; CRM Layouts</strong>
+              </div>
+            </button>
+
+            <button type="button" class="gallery-item glass-card" data-gallery-src="assets/images/experience/industrial-machinery.jpg" data-gallery-title="Industrial Engineering Roots" data-gallery-caption="Representative Visual — Six years of hands-on machine operation and production discipline at Kewal Kiran Clothing Ltd.">
+              <img src="assets/images/experience/industrial-machinery.jpg" alt="Representative visual of modern precision garment manufacturing machinery" loading="lazy" width="1200" height="675">
+              <div class="gallery-overlay">
+                <span class="gallery-badge mono">Industrial Visual</span>
+                <strong>Industrial Engineering Roots</strong>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GITHUB STATISTICS DASHBOARD ==================== -->
+    <section id="github" class="section">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-kicker mono">07 // VERIFIED OPEN SOURCE TELEMETRY</span>
+          <h2 class="section-title">Live GitHub <span class="gradient-text">Dashboard</span></h2>
+          <p class="section-subtitle">
+            Real-time profile metrics, language distribution, and recently updated repositories retrieved directly from GitHub's public REST API.
+          </p>
+        </div>
+
+        <!-- Profile Header Card -->
+        <div class="gh-profile-bar glass-card reveal-item">
+          <div class="gh-user-info">
+            <img id="gh-avatar" src="assets/images/profile-placeholder.png" alt="GitHub avatar for Bipul Kumar" class="gh-avatar" width="76" height="76" loading="lazy">
+            <div>
+              <div class="gh-name-row">
+                <h3 id="gh-name">Bipul Kumar</h3>
+                <span class="gh-handle mono">@vipuldhurvey</span>
+              </div>
+              <p id="gh-bio" class="gh-bio">Full Stack Developer | Frontend Development | HTML5, CSS3, JavaScript, Java | WordPress &amp; Shopify | Responsive Web Design | Problem Solving | Software Projects</p>
+              <span id="gh-joined" class="gh-joined mono">GitHub Member</span>
+            </div>
+          </div>
+          <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>View Full GitHub Profile</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Verified Stats Row -->
+        <div class="gh-stats-grid reveal-item">
+          <article class="gh-stat-card glass-card">
+            <span class="stat-label mono">PUBLIC REPOSITORIES</span>
+            <strong id="stat-repos" class="stat-number gradient-text">--</strong>
+            <span class="stat-sub">Live count from API</span>
+          </article>
+          <article class="gh-stat-card glass-card">
+            <span class="stat-label mono">FOLLOWERS</span>
+            <strong id="stat-followers" class="stat-number gradient-text">--</strong>
+            <span class="stat-sub">Verified GitHub followers</span>
+          </article>
+          <article class="gh-stat-card glass-card">
+            <span class="stat-label mono">FOLLOWING</span>
+            <strong id="stat-following" class="stat-number gradient-text">--</strong>
+            <span class="stat-sub">Verified following count</span>
+          </article>
+          <article class="gh-stat-card glass-card">
+            <span class="stat-label mono">TOTAL STARS &amp; FORKS</span>
+            <strong id="stat-engagement" class="stat-number gradient-text">--</strong>
+            <span id="stat-engagement-sub" class="stat-sub">Across public repositories</span>
+          </article>
+        </div>
+
+        <!-- Dashboard Panels -->
+        <div class="gh-panels-grid">
+          <article class="gh-panel glass-card reveal-item">
+            <div class="panel-head">
+              <h3>Programming Languages</h3>
+              <span class="mono panel-tag">Primary Repo Languages</span>
+            </div>
+            <div id="github-languages" class="lang-bars">
+              <p class="mono muted-note">Analyzing public repositories...</p>
+            </div>
+          </article>
+
+          <article class="gh-panel glass-card reveal-item">
+            <div class="panel-head">
+              <h3>Recently Updated</h3>
+              <span class="mono panel-tag">Latest Pushes</span>
+            </div>
+            <ul id="github-recent-repos" class="recent-list">
+              <li class="mono muted-note">Fetching latest repositories...</li>
+            </ul>
+          </article>
+
+          <article class="gh-panel glass-card reveal-item">
+            <div class="panel-head">
+              <h3>Recent Public Activity</h3>
+              <span class="mono panel-tag">Public Events API</span>
+            </div>
+            <div id="github-activity" class="activity-list">
+              <p class="mono muted-note">Fetching recent public events...</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark">BK</span>
+          <span class="brand-text">
+            <strong>Bipul Kumar</strong>
+            <small class="mono">Full Stack Developer | Web Developer</small>
+          </span>
+        </a>
+        <p class="footer-note">
+          Built cleanly with HTML5, CSS3, and Vanilla JavaScript. Hosted on GitHub Pages with live GitHub REST API integration.
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span>@vipuldhurvey</span>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Bipul Kumar. Designed for modern web browsers.</p>
+      <a href="#home" class="mono">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Scroll back to top" hidden>
+    <svg class="progress-ring" viewBox="0 0 44 44" aria-hidden="true">
+      <circle class="progress-ring-bg" cx="22" cy="22" r="19"></circle>
+      <circle id="scroll-progress-circle" class="progress-ring-bar" cx="22" cy="22" r="19"></circle>
+    </svg>
+    <svg class="arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-dialog glass-card">
+      <button id="modal-close" class="modal-close icon-btn" type="button" aria-label="Close project details">&times;</button>
+      <div class="modal-hero">
+        <img id="modal-image" src="" alt="" width="960" height="540">
+        <span id="modal-visual-note" class="modal-visual-note mono">Representative Visual</span>
+      </div>
+      <div class="modal-body">
+        <div class="modal-badges">
+          <span id="modal-kind" class="project-kind mono">Repository</span>
+          <span id="modal-category" class="modal-cat mono">Category</span>
+        </div>
+        <h3 id="modal-title">Repository Title</h3>
+        <p id="modal-slug" class="modal-slug mono">vipuldhurvey/repo</p>
+        <p id="modal-description" class="modal-description"></p>
+
+        <div id="modal-stats" class="modal-stats mono"></div>
+        <div id="modal-stack" class="modal-stack"></div>
+
+        <div class="modal-readme-box">
+          <div class="modal-readme-head mono">
+            <span>README.md Preview</span>
+            <span id="modal-readme-status">Checking...</span>
+          </div>
+          <div id="modal-readme-content" class="modal-readme-content">
+            Loading repository notes...
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View Source on GitHub
+          </a>
+          <a id="modal-demo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" hidden>
+            Open Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Modal -->
+  <div id="gallery-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title" hidden>
+    <div class="modal-dialog gallery-dialog glass-card">
+      <button id="gallery-modal-close" class="modal-close icon-btn" type="button" aria-label="Close gallery preview">&times;</button>
+      <img id="gallery-modal-img" src="" alt="">
+      <div class="gallery-modal-caption">
+        <h3 id="gallery-modal-title"></h3>
+        <p id="gallery-modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/github.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+

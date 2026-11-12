@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Bipul Kumar</title>
+  <meta name="description" content="The requested page could not be found on Bipul Kumar's developer portfolio.">
+  <meta name="robots" content="noindex, follow">
+  <script>
+    (function () {
+      var host = window.location.hostname;
+      if (host === 'vipuldhurvey.github.io') {
+        var base = document.createElement('base');
+        base.href = '/';
+        document.head.appendChild(base);
+      }
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('bk-portfolio-theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page-404">
+  <div class="ambient-backdrop" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="navbar is-scrolled" role="banner">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand" aria-label="Bipul Kumar Home">
+        <span class="brand-mark">BK</span>
+        <span class="brand-text">
+          <strong>Bipul Kumar</strong>
+          <small>@vipuldhurvey</small>
+        </span>
+      </a>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle color theme" title="Toggle Dark / Light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="error-stage">
+    <div class="container">
+      <div class="error-card glass-card">
+        <div class="error-badge mono">HTTP 404 · ROUTE NOT FOUND</div>
+        <h1 class="error-code gradient-text" aria-label="404">404</h1>
+        <h2 class="error-title">Signal Lost in Cyberspace</h2>
+        <p class="error-desc">
+          The route you requested doesn't exist or may have moved. Let's bring you back to Bipul Kumar's portfolio or explore the live repositories on GitHub.
+        </p>
+        <div class="error-terminal mono" aria-hidden="true">
+          <span class="term-prompt">$</span> curl -I <span id="missing-path">/unknown</span><br>
+          <span class="term-status">404 Not Found — fallback_redirect: ready</span>
+        </div>
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Back to Portfolio Home
+          </a>
+          <a href="index.html#projects" class="btn btn-secondary">
+            Explore GitHub Projects
+          </a>
+          <a href="https://github.com/Vipuldhurvey" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            Visit @vipuldhurvey
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var missingEl = document.getElementById('missing-path');
+      if (missingEl && window.location && window.location.pathname) {
+        missingEl.textContent = window.location.pathname;
+      }
+      var toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme') || 'dark';
+          var next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('bk-portfolio-theme', next); } catch (e) {}
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="db-g" x1="20" y1="16" x2="108" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="64" cy="30" rx="40" ry="14" stroke="url(#db-g)" stroke-width="6" fill="rgba(59,130,246,0.15)"/>
+  <path d="M24 30V64C24 71.7 41.9 78 64 78C86.1 78 104 71.7 104 64V30" stroke="url(#db-g)" stroke-width="6"/>
+  <path d="M24 64V98C24 105.7 41.9 112 64 112C86.1 112 104 105.7 104 98V64" stroke="#06b6d4" stroke-width="6"/>
+  <path d="M24 47C24 54.7 41.9 61 64 61C86.1 61 104 54.7 104 47" stroke="url(#db-g)" stroke-width="4" opacity="0.6"/>
+</svg>
+
